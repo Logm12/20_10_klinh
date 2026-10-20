@@ -49,13 +49,6 @@ export interface PersonalConfig {
     completionMessage: string;
     ingredients: HappinessIngredient[];
   };
-  chapter3: {
-    badge: string;
-    title: string;
-    subtitle: string;
-    hint: string;
-    memories: MemoryItem[];
-  };
   chapter4: {
     badge: string;
     title: string;
@@ -141,60 +134,9 @@ export const personalConfig: PersonalConfig = {
       },
     ],
   },
-  chapter3: {
-    badge: "Chapter 03 • Cuốn sổ lưu giữ",
-    title: "Những điều bé nhỏ về em",
-    subtitle: "Mỗi khung hình và mẩu giấy nhỏ đều lưu giữ một góc dịu dàng rất riêng của Khánh Linh.",
-    hint: "Chạm vào từng tấm ảnh polaroid để lật mở những lời nhắn nhủ anh dành cho em nhé.",
-    memories: [
-      {
-        id: "photo-1",
-        title: "Bên bàn học & giá sách",
-        subtitle: "Cô sinh viên chăm chỉ",
-        description:
-          "Những đêm thức ôn bài với chồng slide dày cộp và các công thức hóa học phức tạp. Em đã luôn cố gắng rất nhiều rồi!",
-        tag: "Chăm chỉ",
-        imagePlaceholderText: "Ảnh Khánh Linh đang học hoặc đọc sách 📚",
-        imageSrc: "/images/memory-1.jpg",
-        sticker: "🔬",
-      },
-      {
-        id: "photo-2",
-        title: "Nụ cười rạng rỡ nhất",
-        subtitle: "Khoảnh khắc hồn nhiên",
-        description:
-          "Vẻ ngoài thì có vẻ ít nói và hơi lạnh lùng một tí, nhưng mỗi khi cười tươi là cả gian phòng như sáng bừng lên vậy.",
-        tag: "Nụ cười",
-        imagePlaceholderText: "Ảnh chân dung hoặc nụ cười rạng rỡ 🌸",
-        imageSrc: "/images/memory-2.jpg",
-        sticker: "🌷",
-      },
-      {
-        id: "photo-3",
-        title: "Tình yêu cỏ cây & sự sống",
-        subtitle: "Một tâm hồn dịu mát",
-        description:
-          "Cách em quan sát một chiếc lá non hay hào hứng kể về cơ chế tế bào luôn cho thấy một trái tim rất tinh tế và yêu đời.",
-        tag: "Hóa - Sinh",
-        imagePlaceholderText: "Ảnh góc thiên nhiên, mầm cây hoặc chiếc lá 🌿",
-        imageSrc: "/images/memory-3.jpg",
-        sticker: "🌱",
-      },
-      {
-        id: "photo-4",
-        title: "Những lúc mỏi mệt",
-        subtitle: "Được phép dừng chân",
-        description:
-          "Không ai có thể lúc nào cũng mạnh mẽ và đạt điểm tuyệt đối. Những ngày áp lực quá, cứ cho phép bản thân nghỉ ngơi ăn một món ngon nhé.",
-        tag: "Nghỉ ngơi chút",
-        imagePlaceholderText: "Ảnh ly trà sữa, góc cafe hoặc góc chill ☕",
-        imageSrc: "/images/memory-4.jpg",
-        sticker: "☕",
-      },
-    ],
-  },
+
   chapter4: {
-    badge: "Chapter 04 • Bức thư gửi em",
+    badge: "Chapter 03 • Bức thư gửi em",
     title: "Gửi đến em — một khởi đầu dịu em",
     subtitle: "Mấy dòng chân thành anh viết gửi em nhân ngày 20/10.",
     letterDate: "Ngày 20 tháng 10 năm 2026",
