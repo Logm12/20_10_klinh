@@ -1,0 +1,219 @@
+export interface MemoryItem {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  tag: string;
+  imagePlaceholderText: string;
+  imageSrc?: string;
+  sticker?: string;
+}
+
+export interface HappinessIngredient {
+  id: string;
+  name: string;
+  scienceName: string; // Tên phân tử hoặc ẩn dụ khoa học vui
+  icon: string;
+  color: string;
+  glowColor: string;
+  note: string;
+}
+
+export interface PersonalConfig {
+  sister: {
+    name: string; // Tên hiển thị chính
+    nickname: string; // Biệt danh thân thương
+    specialty: string; // Ngành học / Đam mê: Hóa - Sinh
+  };
+  brother: {
+    signOff: string; // Chữ ký người anh
+  };
+  siteMeta: {
+    title: string;
+    description: string;
+    occasion: string;
+  };
+  chapter1: {
+    badge: string;
+    headline: string;
+    subheadline: string;
+    openBoxCta: string;
+    openedQuote: string;
+  };
+  chapter2: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    instructions: string;
+    completionTitle: string;
+    completionMessage: string;
+    ingredients: HappinessIngredient[];
+  };
+  chapter3: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    hint: string;
+    memories: MemoryItem[];
+  };
+  chapter4: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    letterDate: string;
+    letterSalutation: string;
+    paragraphs: string[];
+    closing: string;
+    wishes: string[];
+  };
+  audio: {
+    enabled: boolean;
+    src: string;
+    title: string;
+  };
+}
+
+export const personalConfig: PersonalConfig = {
+  sister: {
+    name: "Khánh Linh",
+    nickname: "Cô Bé Hóa Sinh",
+    specialty: "Hóa học & Sinh học 🌿🔬",
+  },
+  brother: {
+    signOff: "Anh hai của em",
+  },
+  siteMeta: {
+    title: "Một Chút Dịu Dàng Dành Cho Em — 20/10",
+    description: "Món quà 20/10 ấm áp, dịu dàng gửi tặng cô em gái nhỏ yêu thương ngành Hóa - Sinh.",
+    occasion: "Ngày Phụ Nữ Việt Nam 20/10",
+  },
+  chapter1: {
+    badge: "Chapter 01 • Một điều bất ngờ nhỏ",
+    headline: "Gửi tặng em gái nhỏ,",
+    subheadline: "Một góc dịu dàng được ấp ủ riêng cho ngày 20/10 — nơi những phản ứng chỉ sinh ra niềm vui và sự an yên.",
+    openBoxCta: "Em chạm để mở hộp quà nhé 🌷",
+    openedQuote: "Chào mừng em đến với góc nhỏ ấm áp này. Hãy thở thật sâu và thư giãn nhé!",
+  },
+  chapter2: {
+    badge: "Chapter 02 • Phòng điều chế hạnh phúc",
+    title: "Công Thức Cho Một Ngày Dễ Thương",
+    subtitle: "Thả những nguyên tố tích cực vào bình tam giác Erlenmeyer thần kỳ để ươm mầm một đóa hoa rạng rỡ.",
+    instructions: "Chạm lần lượt vào từng chiếc thẻ nguyên liệu bên dưới để điều chế nhé:",
+    completionTitle: "Phản ứng tỏa nhiệt ấm áp thành công! ✨",
+    completionMessage:
+      "Tất cả nguyên liệu hòa tan tạo thành nguồn năng lượng tích cực nhất dành tặng em. Đóa hoa hạnh phúc đã nở rộ rồi này!",
+    ingredients: [
+      {
+        id: "joy",
+        name: "Một chút niềm vui",
+        scienceName: "Dopamine & Serotonin",
+        icon: "✨",
+        color: "#F6D6DE",
+        glowColor: "rgba(246, 214, 222, 0.8)",
+        note: "Để nụ cười luôn tự nhiên nở trên môi dù ngày bận rộn.",
+      },
+      {
+        id: "peace",
+        name: "Một chút bình yên",
+        scienceName: "GABA & Chlorophyll",
+        icon: "🌿",
+        color: "#B8CEB5",
+        glowColor: "rgba(184, 206, 181, 0.8)",
+        note: "Một khoảng lặng dịu êm để lòng nhẹ nhõm như đi giữa vườn cây.",
+      },
+      {
+        id: "luck",
+        name: "Một chút may mắn",
+        scienceName: "Catalyst + Luck",
+        icon: "🍀",
+        color: "#E5C48A",
+        glowColor: "rgba(229, 196, 138, 0.8)",
+        note: "Chất xúc tác giúp mọi thí nghiệm và dự định đều hanh thông.",
+      },
+      {
+        id: "love",
+        name: "Thật nhiều thương yêu",
+        scienceName: "Oxytocin Matrix",
+        icon: "🌸",
+        color: "#DDD5F3",
+        glowColor: "rgba(221, 213, 243, 0.8)",
+        note: "Tình thương vô điều kiện từ gia đình luôn đứng sau ủng hộ em.",
+      },
+    ],
+  },
+  chapter3: {
+    badge: "Chapter 03 • Cuốn sổ lưu giữ",
+    title: "Những Điều Bé Nhỏ Về Em",
+    subtitle: "Mỗi khung hình và mẩu giấy nhỏ đều lưu giữ một góc dịu dàng rất riêng của Khánh Linh.",
+    hint: "Chạm vào từng tấm ảnh polaroid để lật mở những lời nhắn nhủ anh dành cho em nhé.",
+    memories: [
+      {
+        id: "photo-1",
+        title: "Bên bàn học & giá sách",
+        subtitle: "Cô sinh viên chăm chỉ",
+        description:
+          "Những đêm thức ôn bài với chồng slide dày cộp và các công thức hóa học phức tạp. Em đã luôn cố gắng rất nhiều rồi!",
+        tag: "Chăm chỉ",
+        imagePlaceholderText: "Ảnh Khánh Linh đang học hoặc đọc sách 📚",
+        imageSrc: "/images/memory-1.jpg",
+        sticker: "🔬",
+      },
+      {
+        id: "photo-2",
+        title: "Nụ cười rạng rỡ nhất",
+        subtitle: "Khoảnh khắc hồn nhiên",
+        description:
+          "Vẻ ngoài thì có vẻ ít nói và hơi lạnh lùng một tí, nhưng mỗi khi cười tươi là cả gian phòng như sáng bừng lên vậy.",
+        tag: "Nụ cười",
+        imagePlaceholderText: "Ảnh chân dung hoặc nụ cười rạng rỡ 🌸",
+        imageSrc: "/images/memory-2.jpg",
+        sticker: "🌷",
+      },
+      {
+        id: "photo-3",
+        title: "Tình yêu cỏ cây & sự sống",
+        subtitle: "Một tâm hồn dịu mát",
+        description:
+          "Cách em quan sát một chiếc lá non hay hào hứng kể về cơ chế tế bào luôn cho thấy một trái tim rất tinh tế và yêu đời.",
+        tag: "Hóa - Sinh",
+        imagePlaceholderText: "Ảnh góc thiên nhiên, mầm cây hoặc chiếc lá 🌿",
+        imageSrc: "/images/memory-3.jpg",
+        sticker: "🌱",
+      },
+      {
+        id: "photo-4",
+        title: "Những lúc mỏi mệt",
+        subtitle: "Được phép dừng chân",
+        description:
+          "Không ai có thể lúc nào cũng mạnh mẽ và đạt điểm tuyệt đối. Những ngày áp lực quá, cứ cho phép bản thân nghỉ ngơi ăn một món ngon nhé.",
+        tag: "Nghỉ ngơi chút",
+        imagePlaceholderText: "Ảnh ly trà sữa, góc cafe hoặc góc chill ☕",
+        imageSrc: "/images/memory-4.jpg",
+        sticker: "☕",
+      },
+    ],
+  },
+  chapter4: {
+    badge: "Chapter 04 • Bức thư gửi em",
+    title: "Gửi Đến Em — Một Khởi Đầu Dịu Êm",
+    subtitle: "Mấy dòng chân thành anh viết gửi em gái nhân ngày 20/10.",
+    letterDate: "Ngày 20 tháng 10 năm 2026",
+    letterSalutation: "Khánh Linh thương mến,",
+    paragraphs: [
+      "20/10 vui vẻ nhé cô em gái. Dạo này bài vở trên trường và những dự định tương lai chắc khiến em có nhiều lúc cảm thấy mệt và căng thẳng. Anh biết tính em: bề ngoài trông có vẻ ít biểu lộ cảm xúc, việc gì cũng tự gánh một mình và luôn đòi hỏi bản thân phải thật chỉn chu.",
+      "Nhưng em biết không, trong sinh học, một cái cây muốn nở hoa rực rỡ thì cũng cần những mùa rụng lá để tích lũy dinh dưỡng; và trong hóa học, có những phản ứng cần thời gian ủ rất lâu mới kết tinh thành những tinh thể đẹp nhất. Em không nhất thiết lúc nào cũng phải gồng mình mạnh mẽ hay hoàn hảo.",
+      "Khi nào thấy mệt, em cứ thong thả nghỉ ngơi, ngủ một giấc thật sâu, uống một ly nước ấm. Em vẫn luôn là niềm tự hào của anh và gia đình. Hãy nhớ rằng bất kể có chuyện gì xảy ra, phía sau em luôn có người tin tưởng, đồng hành và yêu thương em vô điều kiện.",
+    ],
+    closing: "Chúc em một ngày 20/10 thật nhiều niềm vui và luôn tìm thấy sự dịu dàng trong cuộc sống!",
+    wishes: [
+      "Luôn giữ được nụ cười an yên 🌷",
+      "Học tập thật suôn sẻ, kết quả như ý 🌿",
+      "Ăn uống ngủ nghỉ điều độ, nhớ thương bản thân 💖",
+    ],
+  },
+  audio: {
+    enabled: true,
+    src: "/audio/gentle-piano.mp3",
+    title: "Giai điệu dịu êm • Thư giãn",
+  },
+};

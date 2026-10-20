@@ -1,0 +1,5 @@
+# robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://20-10-klinh.vercel.app/sitemap.xml
