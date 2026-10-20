@@ -80,10 +80,10 @@ export const personalConfig: PersonalConfig = {
     specialty: "Hóa học & Sinh học 🌿🔬",
   },
   brother: {
-    signOff: "Anh hai của em",
+    signOff: "Anh Long",
   },
   siteMeta: {
-    title: "Một Chút Dịu Dàng Dành Cho Em — 20/10",
+    title: "Một chút dịu dàng dành cho em — 20/10",
     description: "Món quà 20/10 ấm áp, dịu dàng gửi tặng cô em gái nhỏ yêu thương ngành Hóa - Sinh.",
     occasion: "Ngày Phụ Nữ Việt Nam 20/10",
   },
@@ -96,7 +96,7 @@ export const personalConfig: PersonalConfig = {
   },
   chapter2: {
     badge: "Chapter 02 • Phòng điều chế hạnh phúc",
-    title: "Công Thức Cho Một Ngày Dễ Thương",
+    title: "Công thức cho một ngày dễ thương",
     subtitle: "Thả những nguyên tố tích cực vào bình tam giác Erlenmeyer thần kỳ để ươm mầm một đóa hoa rạng rỡ.",
     instructions: "Chạm lần lượt vào từng chiếc thẻ nguyên liệu bên dưới để điều chế nhé:",
     completionTitle: "Phản ứng tỏa nhiệt ấm áp thành công! ✨",
@@ -143,7 +143,7 @@ export const personalConfig: PersonalConfig = {
   },
   chapter3: {
     badge: "Chapter 03 • Cuốn sổ lưu giữ",
-    title: "Những Điều Bé Nhỏ Về Em",
+    title: "Những điều bé nhỏ về em",
     subtitle: "Mỗi khung hình và mẩu giấy nhỏ đều lưu giữ một góc dịu dàng rất riêng của Khánh Linh.",
     hint: "Chạm vào từng tấm ảnh polaroid để lật mở những lời nhắn nhủ anh dành cho em nhé.",
     memories: [
@@ -195,25 +195,25 @@ export const personalConfig: PersonalConfig = {
   },
   chapter4: {
     badge: "Chapter 04 • Bức thư gửi em",
-    title: "Gửi Đến Em — Một Khởi Đầu Dịu Êm",
-    subtitle: "Mấy dòng chân thành anh viết gửi em gái nhân ngày 20/10.",
+    title: "Gửi đến em — một khởi đầu dịu em",
+    subtitle: "Mấy dòng chân thành anh viết gửi em nhân ngày 20/10.",
     letterDate: "Ngày 20 tháng 10 năm 2026",
     letterSalutation: "Khánh Linh thương mến,",
     paragraphs: [
-      "20/10 vui vẻ nhé cô em gái. Dạo này bài vở trên trường và những dự định tương lai chắc khiến em có nhiều lúc cảm thấy mệt và căng thẳng. Anh biết tính em: bề ngoài trông có vẻ ít biểu lộ cảm xúc, việc gì cũng tự gánh một mình và luôn đòi hỏi bản thân phải thật chỉn chu.",
-      "Nhưng em biết không, trong sinh học, một cái cây muốn nở hoa rực rỡ thì cũng cần những mùa rụng lá để tích lũy dinh dưỡng; và trong hóa học, có những phản ứng cần thời gian ủ rất lâu mới kết tinh thành những tinh thể đẹp nhất. Em không nhất thiết lúc nào cũng phải gồng mình mạnh mẽ hay hoàn hảo.",
-      "Khi nào thấy mệt, em cứ thong thả nghỉ ngơi, ngủ một giấc thật sâu, uống một ly nước ấm. Em vẫn luôn là niềm tự hào của anh và gia đình. Hãy nhớ rằng bất kể có chuyện gì xảy ra, phía sau em luôn có người tin tưởng, đồng hành và yêu thương em vô điều kiện.",
+      "20/10 vui vẻ nha em. Dạo này học hành trên trường cũng như dạy học part time, và 1 số chuyện nó không hay lắm chắc khiến em có nhiều lúc cảm thấy mệt và căng thẳng. Chơi với nhau 10 năm rùi nên anh biết: bề ngoài trông có vẻ lạnh lùng vê lù, việc gì cũng tự gánh một mình và luôn đòi hỏi bản thân phải thật chỉn chu.",
+      "Nhưng em biết không, trong sinh học, một cái cây muốn nở hoa rực rỡ thì cũng cần những mùa rụng lá để tích lũy dinh dưỡng; và trong hóa học, có những phản ứng cần thời gian ủ rất lâu mới kết tinh thành những tinh thể đẹp nhất. Em không nhất thiết lúc nào cũng phải gồng mình quá mức mạnh mẽ hay hoàn hảo, mà che đi cảm xúc thật của mình.",
+      "Khi nào thấy mệt, em cứ thong thả nghỉ ngơi, ngủ một giấc thật sâu, uống một ly nước ấm. Em vẫn luôn là niềm tự hào của tất cả mọi người! Hãy nhớ rằng bất kể có chuyện gì xảy ra, phía sau em luôn có người tin tưởng, đồng hành và yêu thương em vô điều kiện. Nếu mà cảm thấy mệt mỏi quá, or stress quá mà không chịu được, cứ chia sẻ tới anh qua Messenger nha",
     ],
     closing: "Chúc em một ngày 20/10 thật nhiều niềm vui và luôn tìm thấy sự dịu dàng trong cuộc sống!",
     wishes: [
       "Luôn giữ được nụ cười an yên 🌷",
-      "Học tập thật suôn sẻ, kết quả như ý 🌿",
+      "Công việc, học hành thật suôn sẻ, kết quả như ý 🌿",
       "Ăn uống ngủ nghỉ điều độ, nhớ thương bản thân 💖",
     ],
   },
   audio: {
     enabled: true,
-    src: "/audio/gentle-piano.mp3",
-    title: "Giai điệu dịu êm • Thư giãn",
+    src: "/audio/phep-mau.m4a",
+    title: "Phép màu",
   },
 };

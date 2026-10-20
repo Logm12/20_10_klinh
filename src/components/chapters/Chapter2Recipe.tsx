@@ -150,7 +150,7 @@ export function Chapter2Recipe({ onNextChapter }: Chapter2Props) {
                 onClick={onNextChapter}
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent-rose text-white font-medium text-sm sm:text-base shadow-sm hover:bg-accent-rose/90 transition-all focus:outline-none focus:ring-2 focus:ring-accent-rose"
               >
-                <span>Xem những điều bé nhỏ về em</span>
+                <span>Mở bức thư anh gửi em</span>
                 <ArrowDown className="w-4 h-4" />
               </button>
             </div>

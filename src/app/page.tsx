@@ -3,7 +3,6 @@
 import React from "react";
 import { Chapter1Surprise } from "@/components/chapters/Chapter1Surprise";
 import { Chapter2Recipe } from "@/components/chapters/Chapter2Recipe";
-import { Chapter3Scrapbook } from "@/components/chapters/Chapter3Scrapbook";
 import { Chapter4Letter } from "@/components/chapters/Chapter4Letter";
 import { FloatingPetals } from "@/components/ui/AmbientElements";
 import { AudioPlayer } from "@/components/ui/AudioPlayer";
@@ -29,7 +28,7 @@ export default function Home() {
       {/* Background audio player (graceful fallback if no file) */}
       <AudioPlayer />
 
-      {/* Four Interconnected Story Chapters */}
+      {/* Interconnected Story Chapters */}
       <div className="flex flex-col w-full relative z-10">
         <Chapter1Surprise onNextChapter={() => scrollTo("chapter-2")} />
 
@@ -37,16 +36,10 @@ export default function Home() {
           <div className="w-16 h-0.5 bg-blush-pink/40 rounded-full" />
         </div>
 
-        <Chapter2Recipe onNextChapter={() => scrollTo("chapter-3")} />
+        <Chapter2Recipe onNextChapter={() => scrollTo("chapter-4")} />
 
         <div className="w-full flex items-center justify-center py-4">
           <div className="w-16 h-0.5 bg-sage-green/40 rounded-full" />
-        </div>
-
-        <Chapter3Scrapbook onNextChapter={() => scrollTo("chapter-4")} />
-
-        <div className="w-full flex items-center justify-center py-4">
-          <div className="w-16 h-0.5 bg-light-lavender/60 rounded-full" />
         </div>
 
         <Chapter4Letter onReplay={handleReplay} />
